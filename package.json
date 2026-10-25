@@ -1,0 +1,30 @@
+{
+  "name": "codealpha-ecommercestore",
+  "version": "1.0.0",
+  "description": "ShopSphere - Full Stack E-commerce Web Application with React, Node.js, Express, and SQLite",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "test:server": "npm --prefix server test",
+    "test": "npm --prefix server test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "ecommerce",
+    "react",
+    "nodejs",
+    "express",
+    "sqlite",
+    "better-sqlite3",
+    "jwt",
+    "codealpha"
+  ],
+  "author": "CodeAlpha Intern",
+  "license": "MIT"
+}
